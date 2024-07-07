@@ -1,45 +1,58 @@
-# ProWeather
+# Spring Boot Weather API
 
-This app was created with Bootify.io - tips on working with the code [can be found here](https://bootify.io/next-steps/).
-Feel free to contact us for further questions.
+## Description
+This Spring Boot project provides a RESTful API to manage weather data and favorite locations.
 
-## Development
+## Features
+- Locations Api
+    use "https://geocoding-api.open-meteo.com/v1/" for location searcher
+-Weather Api
+    user "https://api.open-meteo.com/v1/forecast" for days and hourly weather details
+- CRUD operations for favorite locations
+- Custom exception handling
+- Integration with Angular frontend
 
-When starting the application `docker compose up` is called and the app will connect to the contained services.
-[Docker](https://www.docker.com/get-started/) must be available on the current system.
+## Prerequisites
+- Java 17 or later
+- Maven
+- postgresql database =proitweather and schema = weather
+- replace postgresql user and password in application.properties
 
-During development it is recommended to use the profile `local`. In IntelliJ `-Dspring.profiles.active=local` can be
-added in the VM options of the Run Configuration after enabling this property in "Modify options". Create your own
-`application-local.properties` file to override settings for development.
+# Development Tools
+- Eclipse
 
-Lombok must be supported by your IDE. For IntelliJ install the Lombok plugin and enable annotation processing -
-[learn more](https://bootify.io/next-steps/spring-boot-with-lombok.html).
+## Installation
 
-After starting the application it is accessible under `localhost:8080`.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/anseri/WeatherApp.git
+    ```
 
-## Build
+2. Navigate to the project directory:
+    ```bash
+    cd pro-weather-server
+    ```
 
-The application can be built using the following command:
+3. Build the project:
+    ```bash
+    mvn clean install
+    or windows
+    mvnw clean install
+    ```
 
-```
-mvnw clean package
-```
+## Running the Application
 
-Start your application with the following command - here with the profile `production`:
+1. Start the Spring Boot application:
+    ```bash
+    mvn spring-boot:run
+     or windows
+    mvnw spring-boot:run
+    ```
 
-```
-java -Dspring.profiles.active=production -jar ./target/pro-weather-0.0.1-SNAPSHOT.jar
-```
+2. The API will be accessible at `http://localhost:8080`.
+## API Endpoints
 
-If required, a Docker image can be created with the Spring Boot plugin. Add `SPRING_PROFILES_ACTIVE=production` as
-environment variable when running the container.
-
-```
-mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=com.proit.weather/pro-weather
-```
-
-## Further readings
-
-* [Maven docs](https://maven.apache.org/guides/index.html)  
-* [Spring Boot reference](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)  
-* [Spring Data JPA reference](https://docs.spring.io/spring-data/jpa/reference/jpa.html)
+login by: user
+password: user@123
+Go to > http://localhost:8080/swagger-ui/index.html
+![alt text](../image/Swagger-UI-Api.png)

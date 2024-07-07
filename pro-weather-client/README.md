@@ -1,29 +1,54 @@
-# Angular17Crud
+# Angular Weather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+## Description
+This Angular project displays weather details, including temperature, rain, and wind speed. Users can view location details and mark favorite locations.
 
-## Development server
+## Features
+- Location details with daily and hourly weather forecasts
+- Favorite locations
+- Interactive charts for weather data
+    use ng2-chart and chart.js for weather line chart
+## UI
+-User Bootstrap 5 for interface design.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prerequisites
+- Node.js and npm installed
+- Angular CLI installed
 
-## Code scaffolding
+# Development Tools
+- VS Code
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/anseri/WeatherApp.git
+    ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Navigate to the project directory:
+    ```bash
+    cd pro-weather-client
+    ```
 
-## Running unit tests
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running the Application
 
-## Running end-to-end tests
+1. Start the development server:
+    ```bash
+    ng serve
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Open your browser and navigate to `http://localhost:4200`.
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Log in to access the application.
+2. View Locations(default locations set "dhaka") list and   search option for your desired locations.
+2. View weather details and interact with the charts.
+3. Mark locations as favorites to easily access them later.
+ Follow repository README.md file
 
-test
