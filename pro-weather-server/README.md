@@ -4,10 +4,10 @@
 This Spring Boot project provides a RESTful API to manage weather data and favorite locations.
 
 ## Features
-- Locations Api
+- Locations Api:
     use "https://geocoding-api.open-meteo.com/v1/" for location searcher
--Weather Api
-    user "https://api.open-meteo.com/v1/forecast" for days and hourly weather details
+-Weather Api:
+    use "https://api.open-meteo.com/v1/forecast" for days and hourly weather details
 - CRUD operations for favorite locations
 - Custom exception handling
 - Integration with Angular frontend
@@ -52,7 +52,7 @@ This Spring Boot project provides a RESTful API to manage weather data and favor
 2. The API will be accessible at `http://localhost:8080`.
 ## API Endpoints
 
-login by: user
-password: user@123
-Go to > http://localhost:8080/swagger-ui/index.html
+#login by: user and 
+#password: user@123
+#Go to > http://localhost:8080/swagger-ui/index.html
 ![alt text](../image/Swagger-UI-Api.png)
