@@ -19,7 +19,7 @@ This Spring Boot project provides a RESTful API to manage weather data and favor
 - replace postgresql user and password in application.properties
 
 # Development Tools
-- Eclipse
+- Eclipse 
 
 ## Installation
 
